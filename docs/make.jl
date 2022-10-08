@@ -1,11 +1,11 @@
-using Documenter, Template
+using Documenter, Interactive_TDC
 
-DocMeta.setdocmeta!(Template, :DocTestSetup,
-    :(using Template); recursive=true)
+DocMeta.setdocmeta!(Interactive_TDC, :DocTestSetup,
+    :(using Interactive_TDC); recursive=true)
 
 makedocs(
-    sitename="Template",
-    modules=[Template],
+    sitename="Interactive_TDC",
+    modules=[Interactive_TDC],
     format=Documenter.HTML(
         prettyurls=get(ENV, "CI", nothing) == "true",
         assets=["assets/aligned.css"]),
@@ -16,6 +16,6 @@ makedocs(
 )
 
 deploydocs(
-    repo="github.com/mforets/Template.jl.git",
+    repo="github.com/FedericoLicandro/Interactive_TDC.jl.git",
     push_preview=true
 )
