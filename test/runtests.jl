@@ -1,7 +1,7 @@
 using Interactive_TDC
 using Test
 
-@testset "JuliaPkg_myTemplate" begin
+@testset "Interactive_TDC" begin
 
     @testset "Test1" begin
 
